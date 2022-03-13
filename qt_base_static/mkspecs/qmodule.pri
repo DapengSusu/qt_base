@@ -1,0 +1,10 @@
+QT_CPU_FEATURES.x86_64 = mmx sse sse2
+QT.global_private.enabled_features = alloca_h alloca sse2 dbus gui libudev network posix_fallocate qml-debug reduce_exports reduce_relocations sql system-zlib testlib widgets xml
+QT.global_private.disabled_features = android-style-assets alloca_malloc_h private_tests dbus-linked release_tools stack-protector-strong
+PKG_CONFIG_EXECUTABLE = /usr/bin/pkg-config
+QMAKE_LIBS_LIBUDEV = -ludev
+QT_COORD_TYPE = double
+QMAKE_LIBS_ZLIB = -lz
+CONFIG += use_gold_linker sse2 sse3 ssse3 sse4_1 sse4_2 avx avx2 avx512f avx512bw avx512cd avx512dq avx512er avx512ifma avx512pf avx512vbmi avx512vl compile_examples enable_new_dtags f16c largefile precompile_header
+QT_BUILD_PARTS += libs examples tools
+QT_HOST_CFLAGS_DBUS += 

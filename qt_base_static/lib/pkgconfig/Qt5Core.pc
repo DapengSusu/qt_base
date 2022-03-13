@@ -1,0 +1,15 @@
+prefix=/home/dapeng/Documents/libs/qt_base_static
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+host_bins=${prefix}/bin
+qt_config=release c++11 c++14 c++1z concurrent dbus reduce_exports reduce_relocations static stl properties animation textcodec big_codecs clock-monotonic codecs textdate datestring doubleconversion eventfd filesystemiterator filesystemwatcher gestures glib itemmodel proxymodel identityproxymodel inotify library mimetype process statemachine regularexpression settings sharedmemory sortfilterproxymodel stringlistmodel systemsemaphore temporaryfile threadsafe-cloexec translation xmlstream xmlstreamreader xmlstreamwriter
+
+Name: Qt5 Core
+Description: Qt Core module
+Version: 5.9.9
+Libs: -L${libdir} -lQt5Core 
+Libs.private: -lpthread -lm -lz -licui18n -licuuc -licudata -lpcre2-16 -ldl -lgthread-2.0 -lglib-2.0 
+Cflags: -I${includedir}/QtCore -I${includedir}
+

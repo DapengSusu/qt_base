@@ -1,0 +1,14 @@
+prefix=/home/dapeng/Documents/libs/qt_base_static
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Sql
+Description: Qt Sql module
+Version: 5.9.9
+Libs: -L${libdir} -lQt5Sql 
+Libs.private: -L/home/dapeng/Documents/libs/qt_base_static/lib -lQt5Core -lm -lz -licui18n -licuuc -licudata -lpcre2-16 -ldl -lgthread-2.0 -lglib-2.0 -lpthread  
+Cflags: -I${includedir}/QtSql -I${includedir}
+Requires: Qt5Core
+
